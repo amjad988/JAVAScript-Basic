@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code</title>
+</head>
+<body style="background-color: rgb(61, 56, 49) color(srgb rgb(247, 241, 241) green blue);" >
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+    <script>
+        function addLan(lanname) {
+            const li = document.createElement('li');
+            li.innerHTML = `${lanname}`;
+            document.querySelector('.language').appendChild(li);
+        }
+        addLan("Python");
+        addLan("Java")
+        function optcode(lanname) {
+            const li =document.createElement('li')
+            li.appendChild(document.createTextNode(lanname))
+            document.querySelector('.language').appendChild(li) 
+        }
+        optcode('C++')
+
+        //Edit
+       const d= document.querySelector('li:nth-child(2)')
+       const newli= document.createElement('li')
+       newli.textContent="c#"
+       d.replaceWith(newli)
+
+       //Remove
+
+       const lastn=document.querySelector('li:first-child')
+       lastn.remove()
+    </script>
+</html>
